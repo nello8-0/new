@@ -1,0 +1,116 @@
+body {
+    background-image: url(../images/back0.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logIn {
+    width: 100vw;
+    height: 100vh;
+}
+
+.logIn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+.logIn .box {
+    position: relative;
+    z-index: 100;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+}
+.logIn .box  img {
+    border-radius: 50%;
+    border: 3px solid rgb(222, 255, 242);
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logIn .box .min-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    gap: 20px ;
+    width: 30%;
+    height: fit-content;
+    border-radius: 50px 15px;
+    box-shadow: 12px 13px 10px 5px rgb(0, 0, 0 / 70%);
+}
+
+.logIn .box .min-box h1 {
+    color: rgba(0, 0, 0, 0.692);
+    padding-top: 30px;
+    position: relative;
+}
+
+.logIn .box .min-box h1::after {
+    content: '';
+    position: absolute;
+    width: 110px;
+    border-radius: 30px;
+    height: 3px;
+    background-color: aqua;
+    bottom: -15px;
+    left: 30%;
+
+}
+
+.logIn .box .min-box p {
+    color: rgb(106, 103, 121);
+    line-height: 1.5;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    max-width: 390px;
+}
+
+.logIn .box .min-box  .id ,
+.logIn .box .min-box  .pass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(59, 54, 54);
+
+}
+.logIn .box .min-box  .id input[type="text"] ,
+.logIn .box .min-box  .pass input[type="password"] 
+{
+    border-radius: 30px;
+    border: 2px solid rgb(180, 106, 106);
+    padding: 8px 20px;
+    caret-color: aqua;
+
+}
+.logIn .box .min-box  .id input[type="text"]:focus ,
+.logIn .box .min-box  .pass input[type="password"]:focus  {
+    outline: none;
+}
+.logIn .box .min-box  input[type="submit"] {
+    border-radius: 22px;
+    padding:10px 20px ;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(43, 134, 104);
+    background-color: transparent;
+    border-color: aquamarine;
+}
